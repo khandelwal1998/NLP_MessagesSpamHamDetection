@@ -1,0 +1,24 @@
+to get list of punctuation:
+import string
+string.punctutaions
+
+to get stop words.
+from sklear.corpus import stopwords
+
+stopwords.words('english')
+
+
+----
+To count number of words in each message
+from sklearn.feature_extraction.text import CountVectorizer
+
+
+bog=CountVectorizer(analyzer=(either word or function)).fit(data['message'])
+len(bog.vocabulary_)
+
+
+
+bog.vocabulary_(to get details of all)
+bog.transfor(data['message'][3]) (to get details of particular word)
+
+bog.get_feature_name()[id of the repeated words]
